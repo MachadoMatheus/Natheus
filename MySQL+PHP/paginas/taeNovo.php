@@ -35,9 +35,19 @@ $autorizacao = $_POST['|\/|'];
 
 /*Cadastra celular no Banco de Dados*/
 
-if (!isset($_SESSION['login']) || !isset($_SESSION['senha'])) {
-	unset($_SESSION['login']);
-	unset($_SESSION['senha']);
-	header('index.php');
+/*TAE*/
+$siap = $_POST['|\/|'];
+$turno = $_POST['|\/|'];
+$lattes = $_POST['|\/|'];
+
+/*Insere TAE no Banco de Dados*/
+
+/*Dependentes*/
+if (!empty($_POST['|\/|']) && isset($_POST['|\/|'])) {
+	$dependentes = $_POST['|\/|'];
+
+	foreach ($$dependentes as $dependente) {
+		/*Poe dependente no Banco de Dados*/
+	}
 }
 ?>

@@ -34,4 +34,28 @@ $descricao = $_POST['|\/|'];
 $autorizacao = $_POST['|\/|'];
 
 /*Cadastra celular no Banco de Dados*/
+
+/*Professor*/
+
+$siap = $_POST['|\/|'];
+$formacao = $_POST['|\/|'];
+$turno = $_POST['|\/|'];
+$lattes = $_POST['|\/|'];
+$carreira = $_POST['|\/|'];
+$tempoPesquisa = $_POST['|\/|'];
+$tempoExtensao = $_POST['|\/|'];
+$tempoEnsino = $_POST['|\/|'];
+
+/*Insere professor no Banco de Dados*/
+
+/*Dependentes*/
+
+if (!empty($_POST['|\/|']) && isset($_POST['|\/|'])) {
+	$dependentes = $_POST['|\/|'];
+
+	foreach ($$dependentes as $dependente) {
+		/*Poe dependente no Banco de Dados*/
+	}
+}
+
 ?>

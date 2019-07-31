@@ -54,7 +54,6 @@ $turma = 21;
 $numAluno = 32;
 
 $matricula = $anoIngresso.$modalidade.$curso.$turma.$numAluno;
-echo "$matricula";
 
 
 /*Adicionar aluno no Banco de Dados*/
@@ -64,50 +63,17 @@ echo "$matricula";
 $responsavelJaExiste = $_POST['|\/|'];
 if ($responsavelJaExiste == 1) {  /*o 1 Depende da Natalinha*/
 	$cpfResp = $_POST['|\/|'];
-	/*Associar coisas no Banco de Dados*/
-} else {
-	/*Identificação*/
-	$nomeResp = $_POST['|\/|'];
-	$cpfResp = $_POST['|\/|'];
-	$rgResp = $_POST['|\/|'];
-	$nomePaiResp  = $_POST['|\/|'];
-	$nomeMaeResp = $_POST['|\/|'];
-	$sexoResp = $_POST['|\/|'];
-	$dtNascResp = $_POST['|\/|'];
-	$naturalidadeResp = $_POST['|\/|'];
-	$nacionalidadeResp = $_POST['|\/|'];
+	$parentesco = $_POST['|\/|'];
 
-	/*Cadastra identificação no Banco de Dados*/
-
-	/*Endereço*/
-	$cepResp = $_POST['|\/|'];
-	$enderecoResp = $_POST['|\/|'];
-	$cidadeResp = $_POST['|\/|'];
-	$emailResp = $_POST['|\/|'];
-	$estadoResp = $_POST['|\/|'];
-
-	/*Cadastra ndereço no Banco de Dados*/
-
-	/*Telefone*/
-	$numeroTelResp = $_POST['|\/|'];
-	$descricaoResp = $_POST['|\/|'];
-
-	/*Cadastra telefone no Banco de Dados*/
-
-	/*Celular*/
-	$numeroCel = $_POST['|\/|'];
-	$descricao = $_POST['|\/|'];
-	$autorizacao = $_POST['|\/|'];
-
-	/*Cadastra celular no Banco de Dados*/
-
-	/*Adicionar responsável no Banco de Dados*/
 	/*Associar coisas no Banco de Dados*/
 }
 
-$parentesco = $_POST['|\/|'];
+/*senha*/
+$senha = 'matheus';
+$hash = password_hash('math', PASSWORD_BCRYPT, [85]);
+echo strlen($hash)."<br>";
+echo "$hash <br> $senha <br>";
 
-/*Insere parentesco na relação*/
-
+echo password_verify('atum', $hash);
 
 ?>

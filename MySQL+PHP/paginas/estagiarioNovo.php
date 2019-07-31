@@ -1,5 +1,8 @@
-
 <?php
+
+session_start();
+include 'utilidades.php';
+Utilidades::verificarUsuarioLogado();
 /*Identificação*/
 $nome = $_POST['|\/|'];
 $cpf = $_POST['|\/|'];
@@ -35,9 +38,7 @@ $autorizacao = $_POST['|\/|'];
 
 /*Cadastra celular no Banco de Dados*/
 
-if (!isset($_SESSION['login']) || !isset($_SESSION['senha'])) {
-	unset($_SESSION['login']);
-	unset($_SESSION['senha']);
-	header('index.php');
-}
+/*Estagiário*/
+$nomeInstituicao = $_POST['|\/|'];
+
 ?>
