@@ -1,3 +1,4 @@
+
 <?php
 	/*Identificação*/
 	$nome = $_POST['|\/|'];
@@ -25,4 +26,12 @@
 	$numeroCel = $_POST['|\/|'];
 	$descricao = $_POST['|\/|'];
 	$autorizacao = $_POST['|\/|'];
+
+	/*Aluno*/
+	if (!empty($_POST['|\/|']) && isset($_POST['|\/|'])) {
+		$obsEspeciais = $_POST['|\/|'];
+	}
+
+	$ano = date('Y');
+	echo $ano;
 ?>
