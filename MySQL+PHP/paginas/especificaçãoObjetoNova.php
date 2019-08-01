@@ -13,4 +13,14 @@ $caracteristicas = $_POST['|\/|'];
 foreach ($caracteristicas as $caracteristica) {
 	/*Adiciona característica a especificacao*/
 }
+
+$quantidade = $_POST['|\/|'];
+$produto = $_POST['|\/|'];
+
+if ($produto == 'item') {/*Depende da Natalinha*/
+	/*Insere item no banco de dados*/
+} else {
+	header('Location:equipamentosNovos.php')
+}
+
 ?>
