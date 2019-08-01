@@ -1,5 +1,8 @@
-
 <?php
+include 'utilidades.php';
+Utilidades::verificarUsuarioLogado();
+/*Verificar se o usuario logado tem permissao*/
+
 /*Identificação*/
 $nome = $_POST['|\/|'];
 $cpf = $_POST['|\/|'];

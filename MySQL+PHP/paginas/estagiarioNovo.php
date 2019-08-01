@@ -1,8 +1,8 @@
 <?php
-
-session_start();
 include 'utilidades.php';
 Utilidades::verificarUsuarioLogado();
+/*Verificar se o usuario logado tem permissao*/
+
 /*Identificação*/
 $nome = $_POST['|\/|'];
 $cpf = $_POST['|\/|'];
@@ -40,5 +40,8 @@ $autorizacao = $_POST['|\/|'];
 
 /*Estagiário*/
 $nomeInstituicao = $_POST['|\/|'];
+$disciplinaEstagiario = $_POST['|\/|'];
+$profResponsavel = $_SESSION['login'];
 
+/*Insere estagiario no Banco de Dados*/
 ?>
